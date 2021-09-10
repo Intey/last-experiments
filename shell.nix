@@ -27,6 +27,7 @@ mkShell {
     gdb
     # glfw # cannot compile, has no opengl...so...manually create derivations, and so on
 
+    rosbash # roscd, etc
     ros-base # for roscore and etc bash commands
     (buildEnv { 
       name = "ros";
